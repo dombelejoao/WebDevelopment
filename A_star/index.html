@@ -51,15 +51,28 @@
     </nav>
 
     <!-- Main Section -->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-            <!-- add main body here -->
-            <link href="maze.html" />
-        </div>
-      </div>
+    <h1 class="title">Maze Generator</h1>
+    <br><br>
+    <h2><h2>
+
+    <div class="complete">
+      <h3>Maze Completed.</h3>
+      <button class="replay" id="submit">Play again</button>
+      <button class="close" id="submit">Close</button>
     </div>
+    
+      <form id="settings" action="">
+        <p>Maze Size</p>
+        <input id="size" type="number" value="500"/></br>
+        <p>Rows/Columns</p>
+        <input id="number" type="number" value="20" /></br>
+        <input id="submit" type="submit" value="Generate Maze">
+      </form>
+  
+    <canvas class="maze"></canvas>
 
     <script src="script.js"></script>
+    <script src="maze.js"></script>
+    <script src="settings.js"></script>
   </body>
 </html>
