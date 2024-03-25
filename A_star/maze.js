@@ -1,5 +1,3 @@
-// DEPTH FIRST SEARCH MAZE IMPLEMENTATION IN JAVASCRIPT BY CONOR BAILEY
-
 // Initialize the canvas
 let maze = document.querySelector(".maze");
 let ctx = maze.getContext("2d");
