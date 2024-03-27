@@ -141,7 +141,7 @@ function drawCities() {
   for (const city of cities) {
     context.beginPath();
     context.arc(city.x, city.y, 3, 0, 2 * Math.PI);
-    context.fillStyle = "#000000";
+    context.fillStyle = "#ff0844";
     context.fill();
     context.closePath();
   }
@@ -158,7 +158,7 @@ function drawBestSolution() {
     const city = bestSolution[i];
     context.lineTo(city.x, city.y);
   }
-  context.strokeStyle = "black";
+  context.strokeStyle = "red";
   context.lineWidth = 2;
   context.stroke();
   context.closePath();
