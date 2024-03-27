@@ -206,9 +206,6 @@ canvas {
   }
   
   /* Main Content CSS */
-  .main {
-    background-color: #141414;
-  }
   
   .main__container {
     display: grid;
