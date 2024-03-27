@@ -1,10 +1,17 @@
+canvas {
+    background-image: url('https://cdn.pixabay.com/photo/2014/04/02/14/09/world-map-306338_1280.png');
+    background-size: 1000px 600px ;
+    margin-left: 23%;
+    
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
   }
-  
+
   .navbar {
     background: #131313;
     height: 80px;
