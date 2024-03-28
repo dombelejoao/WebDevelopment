@@ -1,25 +1,23 @@
-// Define the cities array
+// Define an empty array to store the cities
 let cities = [];
 
-// Define the canvas and context variables
+// Get the canvas and context variables
 const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
 
-// Define the genetic algorithm parameters
+// Set the parameters for the genetic algorithm
 let populationSize = 100;
 let mutationRate = 0.02;
 let iterationLimit = 1000;
 
-// Define the genetic algorithm variables
+// Declare variables for the genetic algorithm
 let population;
 let bestSolution;
 let bestFitness;
 let iteration;
 let iterationInterval;
 
-
-
-// Define the fitness function for a TSP solution
+// Calculate the fitness of a TSP solution
 function fitness(solution) {
   let totalDistance = 0;
   for (let i = 0; i < solution.length; i++) {
@@ -33,7 +31,7 @@ function fitness(solution) {
   return totalDistance;
 }
 
-// Define the mutation operator for a TSP solution
+// Apply mutation to a TSP solution
 function mutate(solution) {
   for (let i = 0; i < solution.length; i++) {
     if (Math.random() < mutationRate) {
@@ -43,7 +41,7 @@ function mutate(solution) {
   }
 }
 
-// Define the tournament selection operator for the genetic algorithm
+// Select candidates for the tournament selection operator
 function tournamentSelection(population, size) {
   const candidates = [];
   for (let i = 0; i < size; i++) {
@@ -57,7 +55,7 @@ function tournamentSelection(population, size) {
   });
 }
 
-// Define the crossover operator for two TSP solutions
+// Perform crossover between two TSP solutions
 function crossover(parent1, parent2) {
   const child = Array.from({ length: parent1.length });
   const startPos = Math.floor(Math.random() * parent1.length);
@@ -77,7 +75,7 @@ function crossover(parent1, parent2) {
   return child;
 }
 
-// Define the initialization function for the genetic algorithm
+// Initialize the genetic algorithm
 function initializeGA() {
   clearInterval(iterationInterval);
 
@@ -105,7 +103,7 @@ function initializeGA() {
   iterationInterval = setInterval(iterateGA, 1);
 }
 
-// Define the main iteration function for the genetic algorithm
+// Perform one iteration of the genetic algorithm
 function iterateGA() {
   if (iteration >= iterationLimit) {
     clearInterval(iterationInterval);
@@ -130,13 +128,13 @@ function iterateGA() {
   iteration++;
 }
 
-// Define the function to clear the canvas and draw the cities
+// Clear the canvas and draw the cities
 function clearCanvas() {
   context.clearRect(0, 0, canvas.width, canvas.height);
   drawCities();
 }
 
-// Define the function to draw the cities on the canvas
+// Draw the cities on the canvas
 function drawCities() {
   for (const city of cities) {
     context.beginPath();
@@ -147,7 +145,7 @@ function drawCities() {
   }
 }
 
-// Define the function to draw the best solution path on the canvas
+// Draw the best solution path on the canvas
 function drawBestSolution() {
   context.clearRect(0, 0, canvas.width, canvas.height);
   drawCities();
@@ -164,7 +162,7 @@ function drawBestSolution() {
   context.closePath();
 }
 
-// Define the function to handle the click event on the canvas
+// Handle the click event on the canvas to add a city
 function addCity(event) {
   const rect = canvas.getBoundingClientRect();
   const x = event.clientX - rect.left;
@@ -173,7 +171,7 @@ function addCity(event) {
   drawCities();
 }
 
-// Define the function to clear the cities
+// Clear the cities and reset the genetic algorithm
 function clearCities() {
   cities = [];
   clearCanvas();
