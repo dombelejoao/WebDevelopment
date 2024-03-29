@@ -51,13 +51,25 @@
     </nav>
 
     <!-- Main Section -->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <!-- add main body for algorithm here -->
-        </div>
+    <div class="container3">
+      <div class="container2">
+          <button class = "btn" id = "pencil" onclick="pencil()">Pencil</button>
+          <button class = "btn" id = "brush" onclick="brush()">Brush</button>
+          <button class = "btn" id = "clear" onclick="clearCanvas()">Clear</button>
+          <button class = "btn" id = "recognize" onclick="recognize()">Recognize</button>
       </div>
-    </div>
+      <div>
+          <canvas id="canvas"></canvas>
+      </div>
+  </div>
+
+      <div id="Geussing">
+          Estimated number
+          <div id="number"></div>
+      </div>
+      <script src="main.js"></script>
+        <script src="nn.js"></script>
+        <script src="bias.js"></script>
 
     <script src="script.js"></script>
   </body>
