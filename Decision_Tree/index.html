@@ -51,14 +51,25 @@
     </nav>
 
     <!-- Main Section -->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <!-- add main body for algorithm here -->
-        </div>
+    <div class="wrapper" id="wrapper">
+      <div class="toolbar">
+          <input class ="button" type="button" id="getFile_button" value="Build Tree">
+          <input class ="button" type="button" id="start_button" value="Run Bypass">
+          <input class ="button" type="button" id="reset_button" value="Reset">
+          <input id="file_input" type="file">
+          <textarea id="input_data" name="input_data" cols="40" rows="18"></textarea></p>
       </div>
-    </div>
-
+      <div class="canvas">
+          <div class="tree" id="tree">
+              <ul id="root">
+              </ul>
+          </div>
+      </div>
+  </div>
+  <script src="ParserCSV.js"></script>
+  <script src="DecisionTree.js"></script>
+  <script src="Data_tree.js"></script>
+  <script src="Interface.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
