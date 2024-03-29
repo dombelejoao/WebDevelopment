@@ -80,13 +80,19 @@
           </style>
       </div>
       <div>
-          <canvas id="canvas"></canvas>
+          <canvas id="canvas" width="2000" height="575"></canvas>
+          <style>
+            canvas {
+              background-color: gray;
+              border-color: black;
+            }
+          </style>
       </div>
   </div>
 
-      <div id="Geussing" style='color: red'>
+      <div id="Geussing" style='font-size: 40px; color: #ff0844'>
           Estimated number
-          <div id="number"></div>
+          <div id="number" style="font-size: 100px; font-family: Georgia, 'Times New Roman', Times, serif"></div>
       </div>
       <script src="main.js"></script>
         <script src="nn.js"></script>
