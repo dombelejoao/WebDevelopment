@@ -1,104 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML CSS Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navbar Section -->
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="index.html" id="navbar__logo"><i class='fa fa-github' style='color: red'></i>Home</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span> <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="..\A_star\index.html" class="navbar__links">A*</a>
-          </li>
-          <li class="navbar__item">
-            <a href="..\Clusterization\index.html" class="navbar__links">Clusterization</a>
-          </li>
-          <li class="navbar__item">
-            <a href="..\Genetic\index.html" class="navbar__links">Genetic</a>
-          </li>
-          <li class="navbar__item">
-            <a href="..\Ant\index.html" class="navbar__links">Ant</a>
-          </li>
-          <li class="navbar__item">
-            <a href="..\Decision_Tree\index.html" class="navbar__links">Decision Tree</a>
-          </li>
-          <li class="navbar__item">
-            <a href="index.html" class="navbar__links">Neural Network</a>
-          </li>
-          <li class="navbar__btn"><a href="https://github.com/dombelejoao/WebDevelopment" class="button">Github</a></li>
-        </ul>
-      </div>
-    </nav>
 
-    <!-- Main Section -->
-    <div class="container3">
-      <div class="container2">
-          <button class = "btn" id = "pencil" onclick="pencil()" style='color: red'>Pencil</button>
-          <button class = "btn" id = "brush" onclick="brush()" style='color: red'>Brush</button>
-          <button class = "btn" id = "clear" onclick="clearCanvas()" style='color: red'>Clear</button>
-          <button class = "btn" id = "recognize" onclick="recognize()" style='color: red'>Recognize</button>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neural Network</title>
+    <link rel="icon" type="image/png" href="../img/LogoIT.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class ="header"> 
+        <header> 
+          <div class="element">
+              <img src="../img/LogoIT.png" alt="">
+          </div>
+          <div class="element">
+                  <h2><a href="../index.html">Higher IT School</a></h2>
+              </div>
+                  <div class="tasks">
+                      <ul class="tasks_list"> 
+                          <li><a href="..\TASK1\index.html">A*</a></li>
+                          <!-- A* -->
+                          <li><a href="..\TASK2\index.html">Clusterization</a></li>
+                          <!-- Clusterization -->
+                          <li><a href="..\TASK3\index.html">Genetic</a></li>
+                          <!-- Genetic algorithm -->
+                          <li><a href="..\TASK4\index.html">Ant</a></li>
+                          <!-- Ant algorithm -->
+                          <li><a href="..\TASK5\index.html">Decision Tree</a></li>
+                          <!-- Decision Tree -->
+                          <li><a href="..\TASK6\index.html">Neural network</a></li>
+                          <!-- Neural network -->
+                      </ul>
+                  </div>
+          <nav class="end">
+              <a class="element" href="https://github.com/modyy321/3rdModule-HITS" target="_blank">
+                  <img src="../img/GitHub64px.png" alt="">
+              </a>
+          </nav>
+      </header>
+
+
+      <div class="container">
+        <div class="l-c"> 
+          <button class = "btn" id = "pencil" onclick="pencil()">Pencil</button>
+          <button class = "btn" id = "brush" onclick="brush()">Brush</button>
+          <button class = "btn" id = "clear" onclick="clearCanvas()">Clear</button>
+          <button class = "btn" id = "recognize" onclick="recognize()">Recognize</button>
           <style>
-          button {
-           position: relative;
-           background: #fff;
-           text-decoration: none;
-           text-transform: uppercase;
-           font-size: 13px;
-           letter-spacing: 0.1em;
-           font-weight: 1000;
-           padding: 10px;
-           margin: 10px;
-           transition: 0.5s;
-           border-radius: 8px;
-          }
-          button:hover {
-            background: #ff8177;
-            color: #ff8177;
-            letter-spacing: 0.25em;
-            box-shadow: 0 0 35px #ff8177;
-          }
-          </style>
-      </div>
-      <div>
-          <canvas id="canvas"></canvas>
-          <style>
-            canvas {
-              background-color: gray;
-              border-radius: 8px;
-              margin: 5px;
+            button {
+             position: relative;
+             background: #fff;
+             text-decoration: none;
+             text-transform: uppercase;
+             font-size: 13px;
+             letter-spacing: 0.1em;
+             font-weight: 1000;
+             padding: 10px;
+             margin: 10px;
+             transition: 0.5s;
+             border-radius: 8px;
             }
-          </style>
+            button:hover {
+              background: #ff8177;
+              color: #ff8177;
+              letter-spacing: 0.25em;
+              box-shadow: 0 0 35px #ff8177;
+            }
+            </style>
+        </div>
+        </div>
+        <div class="r-c">
+         <canvas id="canvas"></canvas>
+        </div>
       </div>
-  </div>
 
-      <div id="Geussing" style='font-size: 40px; color: #ff0844; position: relative; margin: 40px'>
-          Estimated number
-          <div id="number" style="font-size: 100px; font-family: Georgia, 'Times New Roman', Times, serif; position: relative"></div>
-      </div>
-      <script src="main.js"></script>
-        <script src="nn.js"></script>
+        <div id="Geussing">
+            Estimated number
+            <div id="number"></div>
+        </div>
+        <script src="main.js"></script>
+        <script src="NN.js"></script>
         <script src="bias.js"></script>
 
-    <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
