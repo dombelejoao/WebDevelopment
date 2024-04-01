@@ -58,14 +58,14 @@
       <style>
 #size {
     left: 53%;
-    transform: translate(-53%);
+    transform: translate(-65%);
     bottom: 76%;
 }
 .panel {
     position: fixed;
     padding: 20px;
-    background-color: rgba(128, 121, 121, 0.6);
-    color: #000000;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ff0844;
     border-radius: 8px;
     font-size: 25px;
 }
@@ -92,32 +92,6 @@ div {
           <label class="option_label">Euclidean Distance</label>
           <br>
           <br>
-          <style>
-            #command_panel {
-    top: 28%;
-    left: 75%;
-}
-.right_panel {
-    width: 300px;
-    right: 20px;
-}
-.panel {
-    position: fixed;
-    padding: 20px;
-    background-color: rgba(128, 121, 121, 0.6);
-    color: #000000;
-    border-radius: 8px;
-    font-size: 25px;
-}
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
-          </style>
       </div>
       <div class="optional sub_option">
           <input type="checkbox" id="allow_diagonal">
@@ -127,6 +101,32 @@ div {
           <label class="option_label">Weight</label>
           <br>
       </div>
+      <style>
+        #command_panel {
+top: 28%;
+left: 75%;
+}
+.right_panel {
+width: 300px;
+right: 20px;
+}
+.panel {
+position: fixed;
+padding: 20px;
+background-color: rgba(0, 0, 0, 0.6);
+color: #ff0844;
+border-radius: 8px;
+font-size: 25px;
+}
+* {
+margin: 0;
+box-sizing: border-box;
+}
+div {
+display: block;
+unicode-bidi: isolate;
+}
+      </style>
   </div>
   <div id="parameter_panel" class="panel right_panel">
       <button onclick="addWalls()">Add Walls</button>
@@ -145,8 +145,8 @@ div {
 .panel {
     position: fixed;
     padding: 20px;
-    background-color: rgba(128, 121, 121, 0.6);
-    color: #000000;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ff0844;
     border-radius: 8px;
     font-size: 25px;
 }
@@ -176,8 +176,8 @@ div {
 .panel {
     position: fixed;
     padding: 20px;
-    background-color: rgba(128, 121, 121, 0.6);
-    color: #000000;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ff0844;
     border-radius: 8px;
     font-size: 25px;
 }
@@ -200,7 +200,7 @@ div {
   <script src="view.js"></script>
   
   </br>
-  <div style="text-align:center;">
+  <div style="text-align:center; margin-top: 100px;">
     <canvas>This is my canvas</canvas>
 </div>
   </body>
