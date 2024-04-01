@@ -134,7 +134,7 @@ function aStar(grid, src, dest) {
         isVisited[i][j] = true;
 
         if (i != src.x || j != src.y) {
-            drawAnimation(i, j, "#98FB98");
+            drawAnimation(i, j, "#FA98FA");
         }
 
         console.log("Visiting:")
@@ -177,7 +177,7 @@ function aStar(grid, src, dest) {
                     openList.enqueue(triplet);
 
                     if (triplet.x != dest.x || triplet != dest.y) {
-                        drawAnimation(i - 1, j, "#00D9FF");
+                        drawAnimation(i - 1, j, "#ffb199");
                     }
 
                     //update details of cell
@@ -216,7 +216,7 @@ function aStar(grid, src, dest) {
                     openList.enqueue(triplet);
 
                     if (triplet.x != dest.x || triplet != dest.y) {
-                        drawAnimation(i + 1, j, "#00D9FF");
+                        drawAnimation(i + 1, j, "#ffb199");
                     }
 
                     //update details of cell
@@ -255,7 +255,7 @@ function aStar(grid, src, dest) {
                     openList.enqueue(triplet);
 
                     if (triplet.x != dest.x || triplet != dest.y) {
-                        drawAnimation(i, j + 1, "#00D9FF");
+                        drawAnimation(i, j + 1, "#ffb199");
                     }
 
                     //update details of cell
@@ -294,7 +294,7 @@ function aStar(grid, src, dest) {
                     openList.enqueue(triplet);
 
                     if (triplet.x != dest.x || triplet != dest.y) {
-                        drawAnimation(i, j - 1, "#00D9FF");
+                        drawAnimation(i, j - 1, "#ffb199");
                     }
 
                     //update details of cell

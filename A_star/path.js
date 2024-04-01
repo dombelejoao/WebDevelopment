@@ -21,7 +21,7 @@ function drawPath(x, y, temp_x, temp_y) {
     l++;
     timeoutPathID[l] = setTimeout(function () {
 
-        ctx.strokeStyle = "red";
+        ctx.strokeStyle = "blue";
         ctx.lineWidth = 3;
         ctx.beginPath();
         ctx.moveTo(x * cellSide + cellSide / 2, y * cellSide + cellSide / 2);
