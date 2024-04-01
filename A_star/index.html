@@ -51,28 +51,54 @@
     </nav>
 
     <!-- Main Section -->
-    <h1 class="title">Maze Generator</h1>
-    <br><br>
-    <h2><h2>
-
-    <div class="complete">
-      <h3>Maze Completed.</h3>
-      <button class="replay" id="submit">Play again</button>
-      <button class="close" id="submit">Close</button>
-    </div>
+    <div id="size" class="panel">
     
-      <form id="settings" action="">
-        <p>Maze Size</p>
-        <input id="size" type="number" value="500"/></br>
-        <p>Rows/Columns</p>
-        <input id="number" type="number" value="20" /></br>
-        <input id="submit" type="submit" value="Generate Maze">
-      </form>
+      Enter size of n=<input type="number" id="numb" min="2" max="100" />
+      <input type="button" value="Submit " onclick="createMapArray()" />
+  </div>
   
-    <canvas class="maze"></canvas>
-
-    <script src="script.js"></script>
-    <script src="maze.js"></script>
-    <script src="settings.js"></script>
+  <div id="command_panel" class="panel right_panel">
+      <header class = "header1">
+          <h3 class="header2">Heuristic</h3>
+      </header>
+      <div class="sub_option">
+          <input type="radio" name="astar_heuristic" id="manhattan" checked>
+          <label class="option_label">Manhattan Distance</label>
+          <br>
+          <input type="radio" name="astar_heuristic" id="euclidean">
+          <label class="option_label">Euclidean Distance</label>
+          <br>
+          <br>
+      </div>
+      <div class="optional sub_option">
+          <input type="checkbox" id="allow_diagonal">
+          <label class="option_label">Allow Diagonal</label>
+          <br>
+          <input class="number" id="astar_weight" value="2">
+          <label class="option_label">Weight</label>
+          <br>
+  
+      </div>
+  </div>
+  <div id="parameter_panel" class="panel right_panel">
+      <button onclick="addWalls()">Add Walls Plz</button>
+      <button onclick="addStart()">Add Start Point</button>
+      <button onclick="addEnd()">Add End Point</button>
+      <button id="MazeGeneration" onclick="generatePrimMaze()">Generate Maze</button>
+  </div>
+  <div id="control_panel" class="panel right_panel">
+      <button id="startSearch" onclick="search()" disabled="disabled">START SEARCH</button>
+      <button id="clearPath" onclick="clearPath()" disabled="disabled">Clear ALL Path</button>
+      <button onclick="clearWalls()">Clear All Walls</button>
+  </div>
+  <script src="main.js"></script>
+  <script src="aStar.js"></script>
+  <script src="path.js"></script>
+  <script src="script.js"></script>
+  <script src="maze.js"></script>
+  <script src="view.js"></script>
+  
+  </br>
+  <canvas></canvas>
   </body>
 </html>
