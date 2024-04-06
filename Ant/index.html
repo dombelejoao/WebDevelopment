@@ -51,13 +51,31 @@
     </nav>
 
     <!-- Main Section -->
-    <div class="main">
-      <div class="main__container">
-        <div class="main__content">
-          <!-- add main body for algorithm here -->
-        </div>
-      </div>
-    </div>
+    <canvas id="canvas" width="1200" height="600"></canvas>
+
+  <div id="information" class="top-right-list">
+    <ul>
+      <li>
+        Alpha (α): <input class="control" type="number" id="Alpha" value="1" step="0.1">
+      </li>
+      <li>
+        Beta (β): <input class="control" type="number" id="Beta" value="3" step="0.1">
+      </li>
+      <li>
+        Pheromone (ρ): <input class="control" type="number" id="pheromone" value="0.5" step="0.1">
+      </li>
+      <li>
+        Iteration: <input class="control" type="number" id="numIterations" name="numIterations" value="100">
+      </li>
+    </ul>
+    <label id="distance-label">Distance:  in KM</label>
+  </div>
+  
+  <div class="button">
+    <button class = "btn" id = "Start" onclick="startOptimization()">Start</button> 
+  <button class = "btn" id = "Reset" onclick="reset()">Reset</button>
+  
+  </div>
 
     <script src="script.js"></script>
     <script src="ant.js"></script>
