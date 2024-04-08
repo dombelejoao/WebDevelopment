@@ -3,7 +3,7 @@ reset_button.addEventListener('click', reset);
 getFile_button.addEventListener('click', createTree);
 const FILE = document.getElementById('file_input');
 let flag = true;
-document.getElementById('input_data').value = "After deleting this message, write some attributes in commas and wihout spaces to make a decision. "
+document.getElementById('input_data').value = ""
 buildTree(getData(0));
 let treeRoot = document.getElementById("root");
 
