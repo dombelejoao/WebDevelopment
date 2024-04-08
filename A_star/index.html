@@ -53,8 +53,31 @@
     <!-- Main Section -->
     <div id="size" class="panel">
     
-      Enter size of n=<input type="number" id="numb" min="2" max="100" />
+      Enter size of n <input type="number" id="numb" min="2" max="100" />
       <input type="button" value="Submit " onclick="createMapArray()" />
+      <style>
+#size {
+    left: 53%;
+    transform: translate(-65%);
+    bottom: 76%;
+}
+.panel {
+    position: fixed;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ff0844;
+    border-radius: 8px;
+    font-size: 25px;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+      </style>
   </div>
   
   <div id="command_panel" class="panel right_panel">
@@ -74,22 +97,100 @@
           <input type="checkbox" id="allow_diagonal">
           <label class="option_label">Allow Diagonal</label>
           <br>
-          <input class="number" id="astar_weight" value="2">
+          <input class="number" id="astar_weight" value="">
           <label class="option_label">Weight</label>
           <br>
-  
       </div>
+      <style>
+        #command_panel {
+top: 28%;
+left: 75%;
+}
+.right_panel {
+width: 300px;
+right: 20px;
+}
+.panel {
+position: fixed;
+padding: 20px;
+background-color: rgba(0, 0, 0, 0.6);
+color: #ff0844;
+border-radius: 8px;
+font-size: 25px;
+}
+* {
+margin: 0;
+box-sizing: border-box;
+}
+div {
+display: block;
+unicode-bidi: isolate;
+}
+      </style>
   </div>
-    <div id="parameter_panel" class="panel right_panel">
-      <button onclick="addWalls()">Add Walls Plz</button>
+  <div id="parameter_panel" class="panel right_panel">
+      <button onclick="addWalls()">Add Walls</button>
       <button onclick="addStart()">Add Start Point</button>
       <button onclick="addEnd()">Add End Point</button>
       <button id="MazeGeneration" onclick="generatePrimMaze()">Generate Maze</button>
+      <style>
+        #parameter_panel {
+    top: 28%;
+    right: 70%;
+}
+.right_panel {
+    width: 300px;
+    right: 20px;
+}
+.panel {
+    position: fixed;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ff0844;
+    border-radius: 8px;
+    font-size: 25px;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+      </style>
   </div>
   <div id="control_panel" class="panel right_panel">
       <button id="startSearch" onclick="search()" disabled="disabled">START SEARCH</button>
-      <button id="clearPath" onclick="clearPath()" disabled="disabled">Clear ALL Path</button>
-      <button onclick="clearWalls()">Clear All Walls</button>
+      <button id="clearPath" onclick="clearPath()" disabled="disabled">Clear Path</button>
+      <button onclick="clearWalls()">Clear Walls</button>
+      <style>
+        #control_panel {
+    top: 45%;
+    right: 70%;
+}
+.right_panel {
+    width: 300px;
+    right: 20px;
+}
+.panel {
+    position: fixed;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ff0844;
+    border-radius: 8px;
+    font-size: 25px;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+      </style>
   </div>
   <script src="main.js"></script>
   <script src="aStar.js"></script>
