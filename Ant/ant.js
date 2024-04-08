@@ -178,7 +178,7 @@ function drawPath(path, isBestRoute = false) {
   context.clearRect(0, 0, canvas.width, canvas.height);
 
   // Draw the pheromone trails in cyan
-  context.strokeStyle = 'rgba(0, 100, 100, 0.5)';
+  context.strokeStyle = '#ff8177';
   context.lineWidth = 4;
   for (let i = 0; i < path.length - 1; i++) {
     let startX = points[path[i]][0];
@@ -193,7 +193,7 @@ function drawPath(path, isBestRoute = false) {
 
   // Draw the best route in black
   if (isBestRoute) {
-    context.strokeStyle = 'black';
+    context.strokeStyle = 'red';
     context.lineWidth = 2;
     context.beginPath();
     context.moveTo(points[path[0]][0], points[path[0]][1]);
