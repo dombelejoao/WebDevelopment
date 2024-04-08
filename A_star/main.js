@@ -1,10 +1,4 @@
 //this is the main script file
-//it contains all global variables
-//creates the grid function
-//creats walls 
-//creat start and end point 
-//controls buttons
-//search function
 
 var ar = new Array(100);
 for (var i = 0; i < 100; i++) {
@@ -309,7 +303,7 @@ function clickEnd(e) {
         }
     }
 
-    //checking status' status :_)
+    //checking status :
     if (hasStart == true && hasEnd == true) {
         const button = document.getElementById("startSearch");
         button.disabled = false;
