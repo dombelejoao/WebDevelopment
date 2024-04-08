@@ -301,6 +301,13 @@
     height: 80%;
     width: 80%;
   }
+
+  canvas {
+    position: fixed;
+    margin-top: 120px;
+    right: 400px;
+
+}
   
   /* Mobile Responsive */
   @media screen and (max-width: 768px) {
