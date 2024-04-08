@@ -55,7 +55,7 @@
     
       Enter size of n <input type="number" id="numb" min="2" max="100" />
       <input type="button" value="Submit " onclick="createMapArray()" />
-      <style>
+      <!-- <style>
 #size {
     left: 59.3%;
     transform: translate(-65%);
@@ -77,7 +77,25 @@ div {
     display: block;
     unicode-bidi: isolate;
 }
-      </style>
+button {
+             position: relative;
+             text-decoration: none;
+             text-transform: uppercase;
+             font-size: 13px;
+             letter-spacing: 0.1em;
+             font-weight: 1000;
+             padding: 10px;
+             margin: 10px;
+             transition: 0.5s;
+             border-radius: 8px;
+            }
+            button:hover {
+              background: #ff8177;
+              color: #ff8177;
+              letter-spacing: 0.25em;
+              box-shadow: 0 0 35px #ff8177;
+            }
+      </style> -->
   </div>
   
   <div id="command_panel" class="panel right_panel">
@@ -101,7 +119,7 @@ div {
           <label class="option_label">Weight</label>
           <br>
       </div>
-      <style>
+      <!-- <style>
         #command_panel {
 top: 63.3%;
 left: 14.3%;
@@ -126,14 +144,14 @@ div {
 display: block;
 unicode-bidi: isolate;
 }
-      </style>
+      </style> -->
   </div>
   <div id="parameter_panel" class="panel right_panel">
       <button onclick="addWalls()">Add Walls</button>
       <button onclick="addStart()">Add Start Point</button>
       <button onclick="addEnd()">Add End Point</button>
       <button id="MazeGeneration" onclick="generatePrimMaze()">Generate Maze</button>
-      <style>
+      <!--<style>
         #parameter_panel {
     top: 24.8%;
     right: 70%;
@@ -158,13 +176,13 @@ div {
     display: block;
     unicode-bidi: isolate;
 }
-      </style>
+      </style> -->
   </div>
   <div id="control_panel" class="panel right_panel">
       <button id="startSearch" onclick="search()" disabled="disabled">START SEARCH</button>
       <button id="clearPath" onclick="clearPath()" disabled="disabled">Clear Path</button>
       <button onclick="clearWalls()">Clear Walls</button>
-      <style>
+      <!-- <style>
         #control_panel {
     top: 45%;
     right: 70%;
@@ -190,7 +208,7 @@ div {
     display: block;
     unicode-bidi: isolate;
 }
-      </style>
+      </style> -->
   </div>
   <script src="main.js"></script>
   <script src="aStar.js"></script>
