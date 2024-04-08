@@ -51,6 +51,35 @@
     </nav>
 
     <!-- Main Section -->
+    <div id="size" class="panel">
+    
+      Enter size of n=<input type="number" id="numb" min="2" max="100" />
+      <input type="button" value="Submit " onclick="createMapArray()" />
+  </div>
+  
+  <div id="command_panel" class="panel right_panel">
+      <header class = "header1">
+          <h3 class="header2">Heuristic</h3>
+      </header>
+      <div class="sub_option">
+          <input type="radio" name="astar_heuristic" id="manhattan" checked>
+          <label class="option_label">Manhattan Distance</label>
+          <br>
+          <input type="radio" name="astar_heuristic" id="euclidean">
+          <label class="option_label">Euclidean Distance</label>
+          <br>
+          <br>
+      </div>
+      <div class="optional sub_option">
+          <input type="checkbox" id="allow_diagonal">
+          <label class="option_label">Allow Diagonal</label>
+          <br>
+          <input class="number" id="astar_weight" value="2">
+          <label class="option_label">Weight</label>
+          <br>
+  
+      </div>
+  </div>
     <div id="parameter_panel" class="panel right_panel">
       <button onclick="addWalls()">Add Walls Plz</button>
       <button onclick="addStart()">Add Start Point</button>
