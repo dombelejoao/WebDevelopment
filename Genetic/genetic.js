@@ -56,7 +56,8 @@ function tournamentSelection(population, size) {
 }
 
 // Perform crossover between two TSP solutions
-function crossover(parent1, parent2) {
+//invert two TSP solutions either from right or left
+/*function crossover(parent1, parent2) {
   const child = Array.from({ length: parent1.length });
   const startPos = Math.floor(Math.random() * parent1.length);
   const endPos = Math.floor(Math.random() * (parent1.length - startPos)) + startPos;
@@ -73,7 +74,7 @@ function crossover(parent1, parent2) {
     }
   }
   return child;
-}
+}*/
 
 // Initialize the genetic algorithm
 function initializeGA() {
