@@ -64,8 +64,8 @@ function crossover(parent1, parent2) {
   for (let i = startPos; i <= endPos; i++) {
     child[i] = parent1[i];
   }
-  let j = 1;
-  for (let i = 1; i < parent2.length; i++) {
+  let j = 0;
+  for (let i = 0; i < parent2.length; i++) {
     if (!child.includes(parent2[i])) {
       while (child[j] !== undefined) {
         j++;
