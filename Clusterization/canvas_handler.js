@@ -9,7 +9,7 @@ import {
     activeMode
 } from "./main.js"
 
-import { Point } from "./Objects.js";
+import { Point } from "Objects.js";
 
 export {
     addPoint,

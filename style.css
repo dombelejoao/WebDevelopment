@@ -1,10 +1,19 @@
+/*canvas {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/27/Wkipedia_blank_world_map.jpg');
+    /* background-size: 1000px 500px ;
+     margin-left: 15%; 
+    height: 650px;
+    width: 75%;*/
+    
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
   }
-  
+
   .navbar {
     background: #131313;
     height: 80px;
@@ -198,7 +207,7 @@
     }
   }
   
-  /* Main Content CSS */
+   /*Main Content CSS */
   .main {
     background-color: #141414;
   }
@@ -610,4 +619,12 @@
       padding: 10px;
       width: 100%;
     }
+  }
+
+
+  .imghaha{
+    border-radius: 30px;
+    width: 400px;
+    height: 400px;
+    
   }
