@@ -621,11 +621,11 @@
   }
 
 #canvas {
-    background-color: #d8d4d4;
+    background-color: #FFBEB0;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10%;
+    border-radius: 0%;
     opacity: 0.6;
 } 
 
@@ -646,7 +646,7 @@ input{
     appearance: none;
     border: 0;
     border-radius: 10px;
-    background: #080D0D;
+    background: #921A00;
     color: white;
     font-size: 16px;
     font-weight: lighter;
@@ -693,7 +693,7 @@ input{
     }
 
     #canvas {
-        margin-left: 250px;
+        margin-left: 330px;
         margin-right: 330px;
     }
 
@@ -722,4 +722,3 @@ input{
         width: 300px;
     }
 }
-
