@@ -11,7 +11,7 @@ export {
     enableButtons
 }
 
-const COLOR_ACTIVE = '#ff0844';
+const COLOR_ACTIVE = '#A449D8';
 const COLOR_UNACTIVE = '#080D0D';
 
 function buttonsHandler(activeNumber, e) {
