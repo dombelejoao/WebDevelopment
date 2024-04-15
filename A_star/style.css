@@ -343,8 +343,8 @@ button:hover {
             }
 
 #command_panel {
-              top: 71%;
-              left: 14.3%;
+              top: 30%;
+              left: 80%;
               }
 .right_panel {
               width: 300px;
@@ -393,7 +393,7 @@ div {
             }
 
 #control_panel {
-              top: 46%;
+              top: 55%;
               right: 70%;
           }
 .right_panel {
