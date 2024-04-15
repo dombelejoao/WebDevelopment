@@ -619,19 +619,3 @@
     height: 400px;
     
   }
-
-#canvas {
-    background-color: #FFBEB0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0%;
-    opacity: 0.6;
-} 
-
-@media (max-width: 980px){
-
-    #canvas {
-        margin-left: 330px;
-        margin-right: 330px;
-    }
