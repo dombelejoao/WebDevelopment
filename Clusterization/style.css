@@ -735,106 +735,20 @@ div {
     }
   }
 
-
-#canvas {
+  #canvas {
     background-color: #FFBEB0;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 0%;
     opacity: 0.6;
-} 
-
-.wrapper {
-    margin-top: 75px;
-    display:grid;
-    grid-template-columns: 8ch auto;
-}
-
-.toolbar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 75px;
-}
-
-input{
-    appearance: none;
-    border: 0;
-    border-radius: 10px;
-    background: #921A00;
-    color: white;
-    font-size: 16px;
-    font-weight: lighter;
-    margin: 5px auto 5px auto;
-    text-align: center;
-}
-
-.button {
-    width: 300px;
-    height: 50px;
-}
-
-#getClusters {
-    width: 50px;
-    height: 50px;
-}
-
-#kMeans {
-    width: 240px;
-    height: 50px;
-}
-
-#clear{
-    margin-bottom: 30px;
-}
-
-#button-wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
 }
 
 @media (max-width: 980px){
-    header img{
-        display: none;
-    }
-    header{
-        flex-direction: column;
-        padding: 0px;
-        display:block;
-    }
-    header .end {
-        display: none;
-    }
 
     #canvas {
         margin-left: 330px;
         margin-right: 330px;
     }
 
-    .button {
-        width: 200px;
-        height: 40px;
-    }
-    
-    #getClusters {
-        width: 40px;
-        height: 40px;
-    }
-    
-    #kMeans {
-        width: 155px;
-        height: 40px;
-    }
-    
-    #clear{
-        margin-bottom: 10px;
-    }
-    
-    #button-wrapper {
-        margin-left: auto;
-        margin-right: auto;
-        width: 300px;
-    }
 }
