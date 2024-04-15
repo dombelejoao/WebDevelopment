@@ -629,36 +629,7 @@
     opacity: 0.6;
 } 
 
-.wrapper {
-    margin-top: 75px;
-    display:grid;
-    grid-template-columns: 8ch auto;
-}
-
-input{
-    appearance: none;
-    border: 0;
-    border-radius: 10px;
-    background: #921A00;
-    color: white;
-    font-size: 16px;
-    font-weight: lighter;
-    margin: 5px auto 5px auto;
-    text-align: center;
-}
-
 @media (max-width: 980px){
-    header img{
-        display: none;
-    }
-    header{
-        flex-direction: column;
-        padding: 0px;
-        display:block;
-    }
-    header .end {
-        display: none;
-    }
 
     #canvas {
         margin-left: 330px;
