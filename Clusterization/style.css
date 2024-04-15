@@ -744,24 +744,10 @@ div {
     opacity: 0.6;
 }
 
-#button-wrapper {
-    color: #fff;
-}
-
-.wrapper {
-    color: #fff;
-    display:grid;
-    grid-template-columns: 8ch auto;
-}
-
 @media (max-width: 400px){
 
     #canvas {
         margin-left: 330px;
         margin-right: 330px;
-    }
-
-#button-wrapper {
-        color: #fff;
     }
 }
