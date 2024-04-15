@@ -30,7 +30,7 @@ function handleMouseDown(event) {
   const canvasX = x * (canvas.width / rect.width);
   const canvasY = y * (canvas.height / rect.height);
   // Add point to the canvas and the points array
-  context.fillStyle = 'black';
+  context.fillStyle = 'red';
   context.beginPath();
   context.arc(canvasX, canvasY, 5, 0, Math.PI * 2);
   context.fill();
